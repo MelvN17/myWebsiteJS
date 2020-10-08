@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>MoonLab | Color</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <header>
+                <a href="home.html" class="logo">MoonLab</a> <!-- Logo -->
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="imgParagraph.html">Image</a></li>
+                        <li><a href="calcAge.html">Calc Age</a></li>
+                        <li><a class="active" href="color.html">Color</a></li>
+                        <li><a href="chatBot.html">ChatBot</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="container2">
+                <div id="choices">  
+                    <button type="button" id="manualPrompt" onclick="changeBodyBgPrompt();">Manually Prompt it</button><!-- Manual Input of Colors-->
+                    <label>OR</label>
+                    <input type="color" id="myColor" value="#f1faee">
+                    <button type="button" id="picker" onclick="changeBodyBg();">Change</button> <!-- With the help of a color picker -->
+                </div>
+                <div id="innerCont">
+                    <div id="paragraph">
+                        <h2>Summary of a Japanese old story, Momotaro</h2>
+                        <p>Long, long ago, in some place there was an old man and an old woman.<br>
+                            When the old man went to the mountain to cut trees, the old woman went out to
+                            the river to wash clothes.<br>
+                            It happened one day, while the old woman was washing clothes at the river, a
+                            huge peach floated up. (The state is described “Donburako, Donburako” in
+                            Japanese.”<br>
+                            The old woman was happy, and took the peach home.<br><br>
+                            When the old man and old woman tried to cut this peach to eat it, a baby boy
+                            jumped out from the peach.<br>
+                            They thought that this must be a present from our god because they have no
+                            kids. Together they gave the name "Momotaro" to this child, and brought him up
+                            with so much care.<br>
+                            Momotaro quickly became large and came to be very powerful.<br><br>
+                            Then one day, Momotaro said, “I am going to Devil's Island to get rid of the
+                            devil.”<br>
+                            The old woman made millet dumplings for him.<br><br>
+                            In the course of his trip, Momotaro met a dog.<br>
+                            " Mr. Momotarou, where are you going?"<br>
+                            "To devil's island to get rid of the devil."<br>
+                            "So please give me one of the millet dumplings, and I will be your attendant."<br>
+                            A dog got it, so he joined his party.<br><br>
+                            Momorato continued to go with the dog, and he met a monkey.<br>
+                            “Mr. Momotarou, where are you going?"<br>
+                            "To devil's island to get rid of the devil."<br>
+                            "So please give me one of the millet dumplings, and I will be your attendant."<br><br>
+                            Momorato continued to go with the dog and the monkey, and he met a pheasant. <br>
+                            “Mr. Momotarou, where are you going?"<br>
+                            "To devil's island to get rid of the devil."<br>
+                            "So please give me one of the millet dumplings, and I will be your attendant."<br><br>
+                            Momotarou took the dog and monkey and pheasant along with him,
+                            finally they arrived at Devil's island.<br><br>
+                            The bad devils had a great banquet with treasures and big meals stolen.<br>
+                            “Everyone, let’s beat the devils!”<br>
+                            The dog bit, the monkey scratched with his nails, and the pheasant pecked with
+                            his beak.<br>
+                            Momotaro continued cutting with his sword.<br><br>
+                            Thus, Momotaro and his party got rid of the bad devils. He went back to the old
+                            man and old woman house and lived happily ever after.<br></p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <h3>All rights reserved. &copy;Copyright 2020.</h3>
+    </footer>
+</body>
+
+<script>
+    // Function to change webpage background color
+    
+    function changeBodyBg(color){
+      var x = document.getElementById("myColor").value;
+        document.getElementById("innerCont").style.backgroundColor = x;
+    }
+    
+    function changeBodyBgPrompt(){
+        var manualColor = prompt("Input the name of the color(Red, Blue, Yellow, etc.): ");
+
+        if(manualColor === "Red" || manualColor === "red"){
+            document.getElementById("innerCont").style.background = "red";
+        }else if(manualColor === "Blue" || manualColor === "blue"){
+            document.getElementById("innerCont").style.background = "blue";
+        }else if(manualColor === "Yellow" || manualColor === "yellow"){
+            document.getElementById("innerCont").style.background = "yellow";
+        }else if(manualColor === "Green" || manualColor === "green"){
+            document.getElementById("innerCont").style.background = "green";
+        }else if(manualColor === "Orange" || manualColor === "orange"){
+            document.getElementById("innerCont").style.background = "orange";
+        }else if(manualColor === "Grey" || manualColor === "grey"){
+            document.getElementById("innerCont").style.background = "grey";
+        }else if(manualColor === "Violet" || manualColor === "violet"){
+            document.getElementById("innerCont").style.background = "violet";
+        }else if(manualColor === "Purple" || manualColor === "purple"){
+            document.getElementById("innerCont").style.background = "purple";
+        }else if(manualColor === "White" || manualColor === "white"){
+            document.getElementById("innerCont").style.background = "white";
+        }else if(manualColor === "Black" || manualColor === "black"){
+            document.getElementById("innerCont").style.background = "black";
+        }else{
+            alert("Error, please input a valid basic color!");
+        }
+    }
+</script>
+
+</html>

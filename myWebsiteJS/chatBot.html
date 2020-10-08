@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>MoonLab | Chatbot</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <header>
+                <a href="home.html" class="logo">MoonLab</a> <!-- Logo -->
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="imgParagraph.html">Image</a></li>
+                        <li><a href="calcAge.html">Calc Age</a></li>
+                        <li><a href="color.html">Color</a></li>
+                        <li><a class="active" href="chatBot.html">ChatBot</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper"> <!-- Wraps everything into place -->
+                <div class="chatBox">
+                    <div class="container">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"></div>
+                          </div>  
+                        <div class="say"><h2>Say Hi!</h2></div>
+                        <div id="section1"></div> <!-- A container that shows the box of the bot when it replies -->
+                        <br>
+                    </div>
+            
+                    <div id="section2"> <!-- Textbox wherein the User inputs the message-->
+                        <input id="userBox" placeholder="Type Your Message" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer id="footer">
+    <h3>All rights reserved. &copy;Copyright 2020.</h3>
+</footer>
+
+</body>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+    know = {
+            "Hi" : "Hello, how are you? Good, Bad, or are you Feeling down?",
+            "hi" : "Hello, how are you? Good, Bad, or are you Feeling down?",
+            "Hello" : "Hi, how are you? Good, Bad, or are you Feeling down?",
+            "hello" : "Hi, how are you?Good, Bad, or are you Feeling down?",
+            "Good" : "I see, good to hear that then!. Do you mind if I ask a question? You can just say yes or no",
+            "good" : "I see, good to hear that then! Do you mind if I ask a question? You can just say yes or no",
+            "I'm good" : "I see, good to hear that. Do you mind if I ask a question? You can just say yes or no",
+            "i'm good" : "I see, good to hear that. Do you mind if I ask a question? You can just say yes or no",
+            "yes" : "Are you a dog or a cat person?",
+            "Yes" : "Are you a dog or a cat person?",
+            "Cat" : "I see, we're enemies then since I love dogs!",
+            "cat" : "I see, we're enemies then since I love dogs!",
+            "Dog" : "I see, same! Dogs are really the best!",
+            "dog" : "I see, same! Dogs are really the best!",
+            "No" : "It's alright, I am sad now :( I'll just go leave. Bye bye",
+            "no" : "It's alright, I am sad now :( I'll just go leave. Bye bye",
+            "Bad" : "I hope things get better then! Remember that there's a light at the end of every tunnel",
+            "bad" : "I hope things get better then! Remember that there's a light at the end of every tunnel",
+            "Feeling down" : "Are you feeling down because of job or school?",
+            "feeling down" : "Are you feeling down because of your job or school?",
+            "I'm feeling down" : "Are you feeling down because of job or school?",
+            "I am feeling down" : "Are you feeling down because of your job or school?",
+            "Job" : "Jobs are really tough but always remember that if you fall down seven times. Get up at eight.",
+            "job" : "Jobs are really tough but always remember that if you fall down seven times. Get up at eight.",
+            "School" : "School is hard sometimes but always remember that Excellence is not being the best, it is doing your best!",
+            "school" : "School is hard sometimes but always remember that Excellence is not being the best, it is doing your best!",
+            "Are you a robot?" : "No I am not a robot...Probably..maybe? :)",
+            "are you a robot?" : "No I am not a robot...Probably..maybe? :)",
+        };
+        function talk() {
+            var user = document.getElementById("userBox").value;
+            document.getElementById("userBox").value = "";
+            div = document.getElementById("section1");
+            div.innerHTML = div.innerHTML + "<div style='border: 2px solid #dedede; background-color: #f1f1f1; border-radius: 5px; padding: 10px; margin: 10px 0;'>"
+                    +user+"</div>";             
+            if (user in know) {
+                div2 = document.getElementById("section1");
+                div2.innerHTML = div2.innerHTML += "<div style='border: 2px solid #ddd;  text-align: right; background-color: #ccc; border-radius: 5px; padding: 10px; margin: 10px 0;'>"
+                    +know[user] + "</div>";
+                
+            } else {
+                div.innerHTML = div.innerHTML += "<div style='border: 2px solid #ddd;  text-align: right; background-color: #ccc; border-radius: 5px; padding: 10px; margin: 10px 0;'>"
+                    +"I am sorry I do not understand what you are saying. I am still learning."+ "</div>";
+            }
+
+        } 
+
+</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>MoonLab | Paragraph</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <header>
+                <a href="home.html" class="logo">MoonLab</a> <!-- Logo -->
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a class="active" href="imgParagraph.html">Image</a></li>
+                        <li><a href="calcAge.html">Calc Age</a></li>
+                        <li><a href="color.html">Color</a></li>
+                        <li><a href="chatBot.html">ChatBot</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="container4">
+                <div class="tooltip">ToolTip    <!-- Tooltips to tell users that they need to click the button again to cycle through the backgrounds -->
+                    <span class="tooltiptext">Cycle through the background images by pressing the "Change Background" button</span>
+                  </div>
+                <div id="choices3"> <!-- Button that changes the Background image -->
+                    <button type="button" id="imgChanger" onclick="changeImgBg();">Change Background</button>
+                </div>
+                <div id="innerCont3">
+                    <div id="paragraph2">
+                        <h2>Urashima Taro</h2>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once upon a time there was a young fisherman named Urashima Taro lived with his old mother. He was known for his modesty to the villagers. One day, in the early morning he went down to the sea shore. While walking along the beach he suddenly found some children were tormenting a turtle with heavy sticks. Seeing that he said “Hey, get away from it, stop hurting the turtle” – Immediately children ran away from the spot and then Taro released it back into the sea.</p> <br>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The next day, while Taro was fishing the turtle appeared near him from the sea and said “I am the turtle you saved yesterday, I owe you my life and I want to thank you for saving my life. I am inviting you to come with me to see the Dragon Palace.” Taro indeed was astonished knowing that offer that there was a Dragon Palace deep into the sea. He felt he had an old mother alone at home, so he said the turtle “I don’t want to leave my mother so I have decided to stay for not long.” Hearing that the turtle answered “We won’t be long there, you will return here again.” Taro was happy to know it and accepted the invitation that was offered by the turtle. </p><br>
+                            
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taro then climbed on the turtle’s back. Then turtle dived deep into the sea to reach to the desired destination. After journeying for a while they were about to reach to the Palace and Taro saw the Dragon Palace was glittering with gold and silver. When he just arrived, Palace attendants all welcomed him; in fact those attended all were fishes. Then a beautiful princess named Otohime arrived and said “Yesterday you saved a turtle life and it was me, please enjoy your time here and stay here as long as you wish.” Then she took him inside the main palace where Taro had so many things to eat, drink and enjoy.</p><br>
+                            
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The life of Taro inside the palace was very joyful. He forgot the life he had before arriving here. A few days later he suddenly remembered his old mother and the village. So he decided to return home from the Palace. The princess gave him a Tamate-Bako (jeweled hand box) as a souvenir saying “this precious box will help you from harm and open it up when you are in trouble.” He said goodbye to her then he climbed on a turtle back and returned to the beach.</p><br>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All things were strange to him when he arrived in his village. Villagers were staring at him because no one could recognize him. He was puzzled to see many things changed! He headed toward his home to find his mother. When he arrived he saw his mother was nowhere! A house owner came saying “Who are you?” then he replied “I am Taro, I am here to find my mother and this is our house.” Listening to this the house owner said “I used to hear there was a fisherman who used to live here with his mother hundreds years ago, it is impossible that you are Urashima Taro” then house owner left.</p><br>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Urashima Taro did not know what to do, he felt alone and sad! He made his way back to the beach carrying the box. He thought “I lost everything else I had before, now I have nowhere to go, my mother has passed away” so he remembered the words what the princess said to him. He then decided to open the box to relief from the trouble. He was surprised to see, it was empty but a white smoke came out of it and he suddenly became an old man with long white bear, his face wrinkled then he threw up his arms and fell down dead on the beach.</p><br>
+                        
+                    </div>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+    <footer id="footer">
+        <h3>All rights reserved. &copy;Copyright 2020.</h3>
+    </footer>
+
+<body>
+    <script>
+        var x=1;
+    function changeImgBg(){
+        if(x === 1){
+        document.getElementById("innerCont3").style.backgroundImage = "url(img/img1.jpeg)";
+        x++;
+        }else if(x === 2){
+            document.getElementById("innerCont3").style.backgroundImage = "url(img/img2.jpeg)";
+        x++;
+        }else if(x === 3){
+            document.getElementById("innerCont3").style.backgroundImage = "url(img/img3.jpeg)";
+            x++;
+        }else if(x === 4){
+            document.getElementById("innerCont3").style.backgroundImage = "url(img/img4.jpg)";
+            x++;
+        }else if(x === 5){
+            document.getElementById("innerCont3").style.backgroundImage = "url(img/img5.jpeg)";
+            x = 1;
+        }
+    }
+
+    </script>
+</html>
+    
+   

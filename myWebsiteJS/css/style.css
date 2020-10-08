@@ -1,0 +1,726 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Web */
+#container{
+    min-height: 100%;
+}
+
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #1d3557;
+}
+
+header .logo{
+    color: #f1faee;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 10px;
+    padding: 15px 40px;
+    border-right: 3px #f1faee solid;
+    line-height: 5px;
+    float: left;
+}
+
+header nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+header nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 15px 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a{
+    color: #f1faee;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 20px;
+   
+}
+
+header nav ul li a:hover{
+    color: #fff;
+    background-color: #a8dadc;
+}
+
+header nav ul li a.active{
+    color: #fff;
+    background-color: #a8dadc;
+}
+
+
+#checkbtn{
+    color: #f1faee;
+    font-size: 30px;
+    margin-right: 40px;
+    line-height: 100px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#footer{
+    position: relative;
+    background-color: #111;
+    text-align: center;
+    color: #f1f1f1;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    display: none;
+}
+
+
+#footer h3{
+    line-height: 100px;
+}
+
+#footer a{
+    color: #a8dadc;
+}
+
+/* HOME */
+#main-background{
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner.jpg);
+    margin: 0 auto;
+    width: 100%;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quoteBox{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    border: 2px #111 solid;
+    border-radius: 5px;
+    font-size: 35px;
+}
+
+.quoteBox #welcome{
+    padding: 20px 40px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 3px #457b9d;
+    color: #f1faee;
+
+}
+
+.quoteBox:hover, #welcome:hover{
+    background-color:#f1faee;
+    color: #1d3557;
+    transition: all 0.5s ease-in-out;
+}
+
+/* IMG PARAGRAPH */
+#container4{
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 190vh;
+    background-color:#457b9d;
+}
+
+
+#imgChanger{
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+#innerCont3{
+    position: absolute;
+    margin: 20px auto;
+    top: 7%;
+    left: 2%;
+    width: 96%;
+    height: 170vh;
+    background-color: #f1faee;
+    background: cover;
+}
+#choices3{
+    position: absolute;
+    margin: 0 auto;
+    top: 25px;
+    left: 37%;
+}
+
+#imgChanger{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#paragraph2 h2{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#paragraph2{
+    font-size: 17px;
+    padding: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+/* COLOR */
+#container2{
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 175vh;
+    background-color:#457b9d;
+}
+
+#innerCont{
+    position: absolute;
+    margin: 20px auto;
+    top: 7%;
+    left: 2%;
+    width: 96%;
+    height: 155vh;
+    background-color: #f1faee;
+}
+
+#paragraph h2{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#paragraph{
+    font-size: 17px;
+    padding: 15px;
+}
+
+#choices{
+    position: absolute;
+    margin: 0 auto;
+    top: 25px;
+    left: 30%;
+}
+
+#manualPrompt, #picker{
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+#myColor{
+    padding: 8px;
+    outline: none;
+}
+
+/* CALC AGE */
+
+#container3{
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 60vh;
+    background-color:#457b9d;
+}
+
+#innerCont2{
+    position: absolute;
+    margin: 20px auto;
+    top: 7%;
+    left: 2%;
+    width: 96%;
+    height: 50vh;
+    background-color: #f1faee;
+}
+
+
+#innerCont2 #ageFinderbtn{
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 60px;
+    background-color: #f1f1f1;
+}
+
+#choices2{
+    position: absolute;
+    margin: 0 auto;
+    top: 14px;
+    left: 42%;
+}
+
+#choices2 h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-transform: center;
+}
+
+#showAge{
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 10%;
+    border: 2px #111 solid;
+    padding: 8px 18px;
+    width: 75%;
+}
+
+#showAge h1{
+    font-size: 25px;
+}
+
+#showAge #age{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-transform: center;
+    color: #111;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    padding: 8px 18px;
+    background: #f1faee;
+    border: 1px #111 solid; 
+    top: 40px;
+    left: 20px;
+  
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+/* CHATBOT */
+#wrapper{
+    margin: 30px auto;
+    width: 1000px;
+}
+
+#section1{
+    margin: 0 auto; 
+    top: 20%; 
+    padding: 20px 30px; 
+    width: 900px; 
+    height: 1000px; 
+    background-color: #a8dadc;
+}
+.container {
+    border: 2px solid #dedede; 
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#userBox{
+    position: fixed;
+    background-color: #457b9d;
+    bottom: 10px;
+    left: 190px;
+    width: 70%;
+    height: 50px;
+    border: 1px #111 solid;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 16px;
+    bottom: 10px;
+    float: left;
+}
+
+::placeholder{
+    color: #f1f1f1;
+}
+
+#footer{
+    display: block;
+}
+.say{
+    text-align: center;
+    padding: 2px;
+    font-size: 18px;
+}
+  
+.progress-container {
+width: 100%;
+height: 8px;
+background: #ccc;
+}
+
+.progress-bar {
+height: 8px;
+background: #457b9d;
+width: 0%;
+}
+
+/* mobile */
+@media only screen and (max-width: 1000px){
+
+    header .logo{
+        color: #f1faee;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 30px 10px;
+        padding: 15px 40px;
+        line-height: 5px;
+        float: center;
+        
+    }
+
+    header nav ul{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    top: 100px;
+    padding-top: 10px;
+    transition: all 0.5s;
+    background: #f4f5f5;
+    }
+
+    header nav ul li{
+        display: inline-block;
+        margin: 15px 0;
+        margin-right: 15px;
+        line-height: 0;
+    }
+
+    header nav ul li a{
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #111;
+        padding: 5px 8px;
+    }
+
+    header nav ul li a:hover{
+        color: #fff;
+        background-color: #a8dadc;
+    }
+    
+    header nav ul li a.active{
+        color: #fff;
+        background-color: #a8dadc;
+    }
+    
+    .quoteBox{
+        top: 70%;
+    }
+    
+
+    /* Image Paragraph */
+
+    #container4{
+        margin: 100px auto;
+        height: 358vh;
+        top: 50px;
+    }
+    
+    
+    #imgChanger{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        line-height: 15px;
+        padding: 5px;
+        outline: none;
+        font-size: 12px;
+    }
+    
+    #innerCont3{
+        top: 4%;
+        height: 339vh;
+    }
+    #choices3{
+        position: absolute;
+        margin: 0 auto;
+        top: 25px;
+        left: 37%;
+    }
+    #container3{
+        position: relative;
+        margin: 20px auto;
+        width: 70%;
+        height: 60vh;
+        background-color:#457b9d;
+    }
+
+    #innerCont2{
+        position: absolute;
+        margin: 20px auto;
+        top: 7%;
+        left: 2%;
+        width: 96%;
+        height: 50vh;
+        background-color: #f1faee;
+    }
+
+
+    #innerCont2 #ageFinderbtn{
+        position: relative;
+        margin: 0 auto;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 60px;
+        background-color: #f1f1f1;
+    }
+
+    #choices2{
+        position: absolute;
+        margin: 0 auto;
+        top: 14px;
+        left: 42%;
+    }
+
+    #choices2 h2{
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-transform: center;
+    }
+
+    
+ /* CALC AGE */
+    #container3{
+        position: relative;
+        margin: 100px auto;
+        top: 50px;
+        width: 70%;
+        height: 60vh;
+        background-color:#457b9d;
+    }
+
+    #innerCont2{
+        position: absolute;
+        margin: 20px auto;
+        top: 7%;
+        left: 2%;
+        width: 96%;
+        height: 50vh;
+        background-color: #f1faee;
+    }
+
+    #innerCont2 #ageFinderbtn{
+        position: relative;
+        margin: 0 auto;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 60px;
+        background-color: #f1f1f1;
+    }
+
+    #choices2{
+        position: absolute;
+        margin: 0 auto;
+        top: 14px;
+        left: 35%;
+    }
+
+    #choices2 h2{
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-transform: center;
+    }
+
+    #showAge{
+        position: absolute;
+        margin: 0 auto;
+        top: 60%;
+        left: 10%;
+        border: 2px #111 solid;
+        padding: 8px 10px;
+        width: 75%;
+    }
+
+    #showAge h1{
+        font-size: 25px;
+    }
+
+    #showAge #age{
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-transform: center;
+        color: #111;
+    }   
+
+
+/* COLOR */
+
+    #container2{
+        position: relative;
+        margin: 100px auto;
+        width: 70%;
+        height: 288vh;
+        background-color:#457b9d;
+    }
+
+    #innerCont{
+        position: absolute;
+        margin: 20px auto;
+        top: 3%;
+        left: 2%;
+        width: 96%;
+        height: 274vh;
+        background-color: #f1faee;
+    }
+
+    #choices{
+        position: absolute;
+        margin: 0 auto;
+        top: 20px;
+        left: 5%;
+    }
+
+    #manualPrompt, #picker{
+        padding: 5px;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    #myColor{
+        padding: 5px;
+        outline: none;
+    }
+
+    /* CHATBOT */
+    #wrapper{
+        margin: 100px 20px;
+        width: 80%;
+    }
+
+    #section1{
+        position: relative;
+        margin: 0 auto; 
+        top: 20%;
+        right: 50px;
+        padding: 20px 68px; 
+        width: 100%; 
+        height: 1000px; 
+        background-color: #a8dadc;
+    }
+    .container {
+        border: 2px solid #dedede; 
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding-right: 100px;
+        padding-left: 70px;
+        margin: 10px 0;
+    }
+    
+    #userBox{
+        position: fixed;
+        background-color: #457b9d;
+        bottom: 10px;
+        left: 50px;
+        width: 70%;
+        height: 50px;
+        border: 1px #111 solid;
+        border-radius: 10px;
+        color: #f1f1f1;
+        font-size: 18px;
+        margin-bottom: 16px;
+        bottom: 10px;
+        float: left;
+    }
+    
+    ::placeholder{
+        color: #f1f1f1;
+    }
+    
+    #footer{
+        display: block;
+    }
+    .say{
+        text-align: center;
+        padding: 2px;
+        font-size: 18px;
+    }
+
+        /* The progress container (grey background) */
+    .progress-container {
+        width: 110%;
+        height: 8px;
+        background: #ccc;
+    }
+        
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+    height: 8px;
+    background: #457b9d;
+    width: 0%;
+    }
+}
